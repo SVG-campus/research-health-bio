@@ -12,7 +12,7 @@ huggingface:
   - repo_id: dair-ai/emotion
     split: train[:2%]
     streaming: true
-    note: Short text emotion labels for classification / calibration smoke (not clinical advice).
+    note: Pinned for `CHARTER_EMOTION_STREAM_SMOKE` CI + pytest stream smoke (not clinical advice).
 
 kaggle: []
 
