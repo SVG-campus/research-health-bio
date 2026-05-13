@@ -12,7 +12,10 @@ huggingface:
   - repo_id: dair-ai/emotion
     split: train[:2%]
     streaming: true
-    note: Pinned for `CHARTER_EMOTION_STREAM_SMOKE` CI + pytest stream smoke (not clinical advice).
+    note: >
+      Pinned for `CHARTER_EMOTION_STREAM_SMOKE` CI + pytest stream smoke — text emotion labels as a
+      dataloader/stream proxy only; not diagnostics, not a clinical dataset, and not a substitute for
+      IRB-governed health records when the charter demands measured biology.
 
 kaggle: []
 
