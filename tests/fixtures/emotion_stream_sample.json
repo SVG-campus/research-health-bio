@@ -1,0 +1,14 @@
+[
+  {"label": 0, "text": "Placeholder A: reporter felt steady after a routine check-in (synthetic)."},
+  {"label": 1, "text": "Placeholder B: participant described lingering worry about an upcoming exam."},
+  {"label": 2, "text": "Placeholder C: short note that anger was not the dominant reaction today."},
+  {"label": 3, "text": "Placeholder D: mild annoyance about logistics; not clinical documentation."},
+  {"label": 4, "text": "Placeholder E: self-report of surprise at an unexpected schedule change."},
+  {"label": 5, "text": "Placeholder F: neutral recount of a commute with no distress language."},
+  {"label": 0, "text": "Placeholder G: second sadness-class example for label coverage."},
+  {"label": 1, "text": "Placeholder H: anxiety-leaning wording in a fictional diary line."},
+  {"label": 2, "text": "Placeholder I: fictional gripe; wellness-text proxy only."},
+  {"label": 3, "text": "Placeholder J: mild frustration with software; not a patient record."},
+  {"label": 4, "text": "Placeholder K: surprise at a benign lab result in a fictional vignette."},
+  {"label": 5, "text": "Placeholder L: calm closing sentence for twelve-row offline contract."}
+]
