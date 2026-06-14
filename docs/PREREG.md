@@ -1,27 +1,30 @@
-# Preregistration template — `research-health-bio`
-
+# Preregistration — `research-health-bio`
+ 
 **Pillar:** `research-health-bio`  
-**Title:** Health & bio signals
+**Title:** COVID-19 Social Mobility and Replication Rate Causality (ECT-2026-005)
+**Date:** 2026-06-14  
+**ORCID Identifier:** `0009-0004-9601-5617`
 
 ## Charter (one paragraph)
 
-Separate observational wellness signals from clinical claims; require ethics + scope in truth_scope.
+Separate observational wellness signals from clinical claims; require ethics + scope in truth_scope. This study investigates the causal link between community mobility indices (transit station and retail/recreation movement changes) and the subsequent transmission rate ($R_0$) of COVID-19. We evaluate whether mobility changes causally drive $R_0$ movements or if their relationship is spurious under OCCA's phase-shuffled Fourier null controls.
 
 ## Primary question (Layer A)
 
-- **Question:** _What measurable difference do we expect under the stated hypothesis?_
-- **Primary metric:** _e.g. mean delta, AUC, correlation, regret …_
-- **Direction / threshold:** _pre-specify sign or minimal effect size before peeking._
+- **Question:** Do changes in transit and retail mobility (mobility_index) causally influence the COVID-19 reproduction rate ($R_0$) after a physical propagation lag (7 to 14 days)?
+- **Expected DAG:** `mobility_index -> R_0` (with directed flow adhering to temporal priority).
+- **Primary metric:** Discovered directed edges and lagged mutual information.
+- **Direction / threshold:** $\alpha = 0.05$ for PC algorithm. The discovered edge must follow the temporal ordering (lagged mobility to $R_0$) and the information coefficient must exceed the p95 Spectral MC null distribution ($p < 0.05$).
 
 ## Null / negative controls
 
-- **Null model:** _e.g. y-shuffle, permutation, time-shift, placebo instrument …_
-- **Caps:** read `runs/smoke.yaml` (`n_perm_max`, `n_boot_max`) for local smoke; raise only on Kaggle/HF Jobs with a new `run_id`.
+- **Null model:** Phase-shuffled Spectral Monte Carlo (FFT surrogate paths).
+- **Caps:** Capped at $N = 25$ runs for local smokes (`runs/smoke.yaml`); $N = 1000$ for full remote promotion validation with run ID `charter_health_mobility_r0_run_01`.
 
 ## Truth scope & ethics
 
-- **Scope:** observational / simulated / scenario — _not_ universal causal claims unless design supports it.
-- **Data rights:** cite Hub/Kaggle dataset cards; no redistribution beyond their licenses.
+- **Scope:** Observational epidemiological and mobility records under the **ECT-2026** standard.
+- **Data rights:** CSSE JHU COVID-19 and Google Mobility datasets.
 
 ## Promotion rules
 
