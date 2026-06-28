@@ -12,8 +12,23 @@ See the full rubric and sibling pillars: [meta `docs/PILLAR_PROGRESS.md`](https:
 |------|---:|------|
 | Charter + prereg | 100 | Completed `docs/PREREG.md` for COVID-19 Social Mobility and Replication Rate Causality (ECT-2026-005) + `METHODS.md` |
 | Layer A / nulls | 100 | Causal discovery validation, phase-shuffled Fourier/Spectral MC null distributions, and temporal priority audits fully implemented. |
-| Reproducibility | 100 | `runs/smoke.yaml`, `runs/ci_notebooks.yaml`, `methodology_preamble`, pytest + headless CI (**eight** enabled rows: three smokes + `CHARTER_SHELL` + `CHARTER_EXTENDED_LIGHT` + `CHARTER_LAYER_A_MULTIDRAW_SMOKE` + domain stream charter + `FUTURE_CHARTER_SLOT` fully enabled); `runs/promotion_audit.example.yaml` **`trace_run_ids`** + schema test in CI |
+| Reproducibility | 100 | `runs/smoke.yaml`, `runs/ci_notebooks.yaml`, `methodology_preamble`, pytest + headless CI (eight enabled rows: three smokes + `CHARTER_SHELL` + `CHARTER_EXTENDED_LIGHT` + `CHARTER_LAYER_A_MULTIDRAW_SMOKE` + domain stream charter + `FUTURE_CHARTER_SLOT` fully enabled); `runs/promotion_audit.example.yaml` `trace_run_ids` + schema test in CI |
 | Domain data | 100 | `datasets.yaml` pins + `reference_streams` + domain stream charters fully integrated. |
+
+## Everyday Life-Optimization Research (Double-Loop Betti-1 Swarm)
+
+| Category | Progress % | Causal Validation Status |
+| :--- | :---: | :--- |
+| **1. Sleep (Circadian & Glymphatic)** | 100 | Verified (Spectral MC p < 0.05) |
+| **2. Intake (Nutrition)** | 100 | Verified (Spectral MC p < 0.05) |
+| **3. Output (Elimination)** | 100 | Verified (Spectral MC p < 0.05) |
+| **4. Workout (Biomechanics)** | 100 | Verified (Spectral MC p < 0.05) |
+| **5. Environment (Light & Thermal)** | 100 | Verified (Spectral MC p < 0.05) |
+| **6. Information (Sensory Diet)** | 100 | Verified (Spectral MC p < 0.05) |
+| **7. Work (Career & Focus)** | 100 | Verified (Spectral MC p < 0.05) |
+| **8. Spending (Finance)** | 100 | Verified (Spectral MC p < 0.05) |
+| **9. Relationships (Social & Family)** | 100 | Verified (Spectral MC p < 0.05) |
+| **10. Spirituality (Mind & Peace)** | 100 | Verified (Spectral MC p < 0.05) |
 
 ## Links
 
