@@ -17,10 +17,22 @@ huggingface:
       dataloader/stream proxy only; not diagnostics, not a clinical dataset, and not a substitute for
       IRB-governed health records when the charter demands measured biology.
 
-kaggle: []
+  - repo_id: aai530-group6/pmdata
+    split: train
+    streaming: true
+    note: PMData Lifelogging dataset (Fitbit Versa 2 data including sleep, calories, steps, heart rate).
+  - repo_id: aai530-group6/sleep-score-fitbit
+    split: train
+    streaming: true
+    note: Fitbit sleep score metrics (resting heart rate, deep sleep duration, sleep score).
 
+kaggle:
+  - dataset_id: arashnic/fitbit
+    note: Fitbit Fitness Tracker Data (consenting user sleep, heart rate, daily steps, and calories).
+  - dataset_id: uom190346a/sleep-health-and-lifestyle-dataset
+    note: Sleep Health and Lifestyle dataset mapping sleep quality to BMI, physical activity, and stress.
 
-search_keywords: []
+search_keywords: [fitbit, sleep actigraphy, sleep score, circadian, PMData]
 
 reference_streams:
   - name: PubMed search (reference)
