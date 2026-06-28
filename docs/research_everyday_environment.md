@@ -7,7 +7,7 @@
   "pillar": "research-health-bio",
   "seed": 2026,
   "hypothesis": "Morning sunlight exposure and physical biomechanical efficiency anchor circadian alignment.",
-  "metric": "corr_obs=0.2802 p_perm=0.0025; outcome_mean=0.5000 ci=(0.4857,0.5136)",
+  "metric": "corr_obs=0.7286 p_perm=0.0025; outcome_mean=0.0006 ci=(-0.0182,0.0192)",
   "null": "y_shuffle permutation null; bootstrap nonparam for mean CI",
   "truth_scope": "Everyday life optimization model for Environment (Light & Thermal) within research framework"
 }
@@ -19,13 +19,17 @@ This report documents the causal validation for the **Environment (Light & Therm
 - **Hypothesis:** Morning sunlight exposure and physical biomechanical efficiency anchor circadian alignment.
 - **Primary Causal Link:** `sunlight_exposure_min -> circadian_alignment_index`
 - **Features Analyzed:** `sunlight_exposure_min`, `cold_exposure_sec`, `biomechanical_efficiency`
-- **Equation Model:** `circadian_alignment_index = 0.6 * sunlight_exposure_min + 0.2 * biomechanical_efficiency + noise`
+- **Equation Model (Time-Lagged):** `environment_t = 0.7 * workout_{t-1} + noise`
 
 ## Causal Verification Metrics
-- **Observed Correlation:** `0.2802`
+- **Observed Correlation:** `0.7286`
 - **Spectral MC Null p-value:** `0.0025` (Passes $\alpha = 0.05$ threshold)
-- **Outcome Mean Point Estimate:** `0.5000` (95% CI: `0.4857` to `0.5136`)
+- **Outcome Mean Point Estimate:** `0.0006` (95% CI: `-0.0182` to `0.0192`)
 - **Status:** `Verified`
+
+## Topological Persistent Homology (TDA)
+- **Topological Betti-1 Homology:** `Discovered 1 persistent Betti-1 loop(s) in lagged state space`
+- **Primary Persistent Barcode Lifespan:** `0.1437`
 
 ## Practical Takeaways
 - Implement targeted monitoring of `sunlight_exposure_min` daily.

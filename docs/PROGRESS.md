@@ -30,6 +30,12 @@ See the full rubric and sibling pillars: [meta `docs/PILLAR_PROGRESS.md`](https:
 | **9. Relationships (Social & Family)** | 100 | Verified (Spectral MC p < 0.05) |
 | **10. Spirituality (Mind & Peace)** | 100 | Verified (Spectral MC p < 0.05) |
 
+## Topological TDA Persistent Homology Barcodes (Lagged Space)
+
+| Topological Feature | Birth (Filtration) | Death (Filtration) | Lifespan (Persistence) |
+| :--- | :--- | :--- | :--- |
+| Betti-1 Loop 1 | Birth: 0.5242 | Death: 0.6679 | Lifespan: 0.1437 |
+
 ## Links
 
 - Preregistration: [docs/PREREG.md](PREREG.md)

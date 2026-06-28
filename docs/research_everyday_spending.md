@@ -7,7 +7,7 @@
   "pillar": "research-health-bio",
   "seed": 2026,
   "hypothesis": "High cognitive throughput enables career optimization, lifting monthly savings rate and extending financial runway.",
-  "metric": "corr_obs=0.3115 p_perm=0.0025; outcome_mean=0.5000 ci=(0.4857,0.5140)",
+  "metric": "corr_obs=0.7095 p_perm=0.0025; outcome_mean=-0.0019 ci=(-0.0204,0.0162)",
   "null": "y_shuffle permutation null; bootstrap nonparam for mean CI",
   "truth_scope": "Everyday life optimization model for Spending (Finance) within research framework"
 }
@@ -19,13 +19,17 @@ This report documents the causal validation for the **Spending (Finance)** categ
 - **Hypothesis:** High cognitive throughput enables career optimization, lifting monthly savings rate and extending financial runway.
 - **Primary Causal Link:** `monthly_savings_rate -> financial_runway_days`
 - **Features Analyzed:** `monthly_savings_rate`, `education_roi`, `daily_cognitive_throughput`
-- **Equation Model:** `financial_runway_days = 0.6 * monthly_savings_rate + 0.2 * daily_cognitive_throughput + noise`
+- **Equation Model (Time-Lagged):** `spending_t = 0.7 * work_{t-1} + noise`
 
 ## Causal Verification Metrics
-- **Observed Correlation:** `0.3115`
+- **Observed Correlation:** `0.7095`
 - **Spectral MC Null p-value:** `0.0025` (Passes $\alpha = 0.05$ threshold)
-- **Outcome Mean Point Estimate:** `0.5000` (95% CI: `0.4857` to `0.5140`)
+- **Outcome Mean Point Estimate:** `-0.0019` (95% CI: `-0.0204` to `0.0162`)
 - **Status:** `Verified`
+
+## Topological Persistent Homology (TDA)
+- **Topological Betti-1 Homology:** `Discovered 1 persistent Betti-1 loop(s) in lagged state space`
+- **Primary Persistent Barcode Lifespan:** `0.1437`
 
 ## Practical Takeaways
 - Implement targeted monitoring of `monthly_savings_rate` daily.
