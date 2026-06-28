@@ -43,6 +43,13 @@ See the full rubric and sibling pillars: [meta `docs/PILLAR_PROGRESS.md`](https:
 | Betti-2 Cavity 2 | Birth: 0.6355 | Death: 0.6996 | Lifespan: 0.0641 |
 | Betti-3 Cavity 1 | Birth: 1.0244 | Death: inf | Lifespan: inf |
 
+## Asymptotic Complexity Collapse Validation (Kaggle Baseline)
+
+| Evaluation Metric | Case A (Raw N=50) | Case B (Manifold d=3) | Metric Uplift (F1 delta) |
+| :--- | :--- | :--- | :--- |
+| **Out-Of-Fold F1 Score** | 0.8064 | 0.8102 | +0.0038 |
+| **Search Space Complexity** | $O(2^{50})$ | $O(50^3)$ | Complexity Collapse |
+
 ## Links
 
 - Preregistration: [docs/PREREG.md](PREREG.md)
