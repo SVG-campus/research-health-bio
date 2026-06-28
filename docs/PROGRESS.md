@@ -32,12 +32,16 @@ See the full rubric and sibling pillars: [meta `docs/PILLAR_PROGRESS.md`](https:
 
 
 
+
+
 ## Topological TDA Persistent Homology Barcodes (Lagged Space)
 
 | Topological Feature | Birth (Filtration) | Death (Filtration) | Lifespan (Persistence) |
 | :--- | :--- | :--- | :--- |
 | Betti-1 Loop 1 | Birth: 0.5242 | Death: 0.6679 | Lifespan: 0.1437 |
-| Betti-2 Cavity 1 | Birth: 0.5549 | Death: 0.6062 | Lifespan: 0.0513 |\n| Betti-2 Cavity 2 | Birth: 0.6355 | Death: 0.6996 | Lifespan: 0.0641 |
+| Betti-2 Cavity 1 | Birth: 0.5549 | Death: 0.6062 | Lifespan: 0.0513 |
+| Betti-2 Cavity 2 | Birth: 0.6355 | Death: 0.6996 | Lifespan: 0.0641 |
+| Betti-3 Cavity 1 | Birth: 1.0244 | Death: inf | Lifespan: inf |
 
 ## Links
 
